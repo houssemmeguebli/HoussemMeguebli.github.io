@@ -19,853 +19,866 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/modern-header.css" rel="stylesheet" />
+    <link href="css/modern-navbar.css" rel="stylesheet" />
+    <link href="css/modern-sections.css" rel="stylesheet" />
+    <link href="css/contact-footer.css" rel="stylesheet" />
+    <link href="css/scroll-enhancements.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
 </head>
 
-<body class="d-flex flex-column h-100">
+<body>
 
-    <main class="flex-shrink-0">
+    <main>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <nav class="modern-navbar fixed-top">
+            <div class="scroll-progress"></div>
             <div class="container px-5">
-                <a class="navbar-brand" href=""><span class="fw-bolder text-primary">Houssem Meguebli</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projets">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
+                <div class="navbar-content">
+                    <a class="navbar-logo" href="">
+                        <div class="logo-icon">
+                            <span class="logo-text">H</span>
+                        </div>
+                        <div class="logo-name">
+                            <span class="logo-first">Houssem Meguebli</span>
+                        </div>
+                    </a>
+                    
+                    <div class="navbar-menu">
+
+                        <a class="nav-link-modern" href="#resume">
+                            <i class="bi bi-person"></i>
+                            <span>Resume</span>
+                        </a>
+                        <a class="nav-link-modern" href="#projets">
+                            <i class="bi bi-code-slash"></i>
+                            <span>Projects</span>
+                        </a>
+                        <a class="nav-link-modern" href="#contact">
+                            <i class="bi bi-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </div>
+                    
+                    <div class="navbar-actions">
+                        <a href="#contact" class="navbar-cta">
+                            <span>Contact Me</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                        <button class="mobile-toggle" type="button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
                 </div>
             </div>
-
         </nav>
         <!-- Header-->
-        <header class="py-5" id="mainHeader">
-
-            <div class="container px-5 pb-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-xxl-5">
-
+        <header class="hero-section" id="mainHeader">
+            <div class="hero-background">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+            
+            <div class="container px-5 py-5">
+                <div class="row gx-5 align-items-center min-vh-100">
+                    <div class="col-lg-6 order-2 order-lg-1">
                         <!-- Header text content-->
-                        <div class="text-center text-xxl-start">
-                            <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
-                                <div class="text-uppercase">Development &middot; Web &middot; Desktop &middot;
-                                    Applications</div>
+                        <div class="hero-content text-center text-lg-start">
+                            <div class="hero-badge mb-4">
+                                <span class="badge-text">Full Stack Developer</span>
+                                <div class="badge-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
                             </div>
-                            <div class="fs-3 fw-light text-muted">I can help your business to</div>
-                            <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Get online and
-                                    grow fast</span></h1>
-                            <div
-                                class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
-                                    href="#contact">Contact Me</a>
-                                <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
-                                    href="#resume">Resume</a>
+                            
+                            <div class="hero-greeting mb-3">
+                                <span class="greeting-text">Hello, I'm</span>
                             </div>
-
+                            
+                            <h1 class="hero-title mb-4">
+                                <span class="name-highlight">Houssem</span>
+                                <span class="name-primary">Meguebli</span>
+                            </h1>
+                            
+                            <p class="hero-subtitle mb-5">
+                                Crafting digital experiences with <span class="highlight-text">modern technologies</span> 
+                                and innovative solutions that drive business growth.
+                            </p>
+                            
+                            <div class="hero-stats mb-5">
+                                <div class="stat-item">
+                                    <span class="stat-number">1+</span>
+                                    <span class="stat-label">Years Experience</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">10+</span>
+                                    <span class="stat-label">Projects Completed</span>
+                                </div>
+                            </div>
+                            
+                            <div class="hero-actions">
+                                <a class="btn-primary-modern" href="#contact">
+                                    <span>Let's Work Together</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                                <a class="btn-secondary-modern" href="#resume">
+                                    <i class="bi bi-download"></i>
+                                    <span>Download CV</span>
+                                </a>
+                            </div>
+                            
+                            <div class="social-links mt-5">
+                                <a href="https://www.linkedin.com/in/houssemmeguebli/" target="_blank" class="social-link">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/houssemmeguebli" target="_blank" class="social-link">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="mailto:houssem.meguebli@esprit.tn" class="social-link">
+                                    <i class="bi bi-envelope"></i>
+                                </a>
+                            </div>
                         </div>
-
                     </div>
 
-                    <div class="col-xxl-7">
-                        <!-- Header profile picture-->
-                        <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                            <div class="profile  ">
-                                <img class="profile-img" src="assets/10276612_4421964.jpg" alt="Network probleme">
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <!-- Enhanced profile picture-->
+                        <div class="hero-image-container">
+                            <div class="profile-wrapper">
+                                <div class="profile-glow"></div>
+                                <div class="profile-ring"></div>
+                                <div class="profile-background"></div>
+                                <div class="image-frame">
+                                    <img class="profile-image" src="assets/Houssem_image.png" alt="Houssem Meguebli - Full Stack Developer">
+                                    <div class="image-overlay"></div>
+                                </div>
+                                <div class="profile-decoration">
+                                    <div class="tech-badge badge-react">
+                                        <i class="fab fa-react"></i>
+                                        <span>React</span>
+                                    </div>
+                                    <div class="tech-badge badge-js">
+                                        <i class="fab fa-js-square"></i>
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div class="tech-badge badge-node">
+                                        <i class="fab fa-node-js"></i>
+                                        <span>Node.js</span>
+                                    </div>
+                                    <div class="tech-badge badge-python">
+                                        <i class="fab fa-python"></i>
+                                        <span>Python</span>
+                                    </div>
+                                </div>
+                                <div class="status-indicator">
+                                    <div class="status-dot"></div>
+                                    <span class="status-text">Available for work</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </header>
       
         <!--End Header-->
-        <!-- About Section-->
-        <section class="bg-light py-5" id="animationSection">
+        <!-- Enhanced About Section-->
+        <section class="modern-about-section py-5" id="animationSection">
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
-                    <div class="col-xxl-8">
-                        <div class="text-center my-5">
-                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
-
-
-                            <p class="lead fw-light mb-4">Welcome to my digital space! I'm Houssem Meguebli</p>
-
-                            <p class="text-muted">
-                                A passionate and dedicated Software Engineer with a specialization in Full Stack Web
-                                Development.
-                                With a keen eye for detail and a love for crafting seamless digital experiences,
-                                I bring a unique blend of technical expertise and creative problem-solving
-                            </p>
-                            <div class="d-flex justify-content-center fs-2 gap-4">
-                                <a class="text-gradient" href="https://www.linkedin.com/in/houssemmeguebli/"
-                                    target="_blank"><i class="bi bi-linkedin"></i></a>
-                                <a class="text-gradient" href="https://github.com/houssemmeguebli" target="_blank"><i
-                                        class="bi bi-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End About Section-->
-        <section class="py-5 bg-gradient-primary-to-secondary text-white">
-            <div class="container px-5 my-5">
-                <div class="text-center">
-                    <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="#contact">Contact me</a>
-                </div>
-            </div>
-        </section>
-        <!-- Page Content-->
-        <div class="container px-5 my-5" id="resume">
-            <div class="text-center mb-5">
-                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
-            </div>
-            <div class="row gx-5 justify-content-center">
-                <div class="col-lg-11 col-xl-9 col-xxl-8">
-                    <!-- Experience Section-->
-                    <section>
-
-                  
-                        <div class="d-flex align-items-center justify-content-between mb-4">
-                            <h2 class="text-primary fw-bolder mb-0">Experience</h2>
-                            <!-- Download resume button-->
-                            <a class="btn btn-primary px-4 py-3" href="assets/CV_Houssem_Meguebli.pdf" target="_blank">
-
-                                <div class="d-inline-block bi bi-download me-2"></div>
-                                Download CV
-                            </a>
-                        </div>
-                        <!-- Experience Card 1-->
-                         <div class="card shadow border-0 rounded-4 mb-5">
-    <div class="card-body p-5">
-        <div class="row align-items-center gx-5">
-            <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                <div class="bg-light p-4 rounded-4">
-                    <div class="text-primary fw-bolder mb-2">February- July 2025</div>
-                    <div class="small fw-bolder">Software Engineer Intern</div>
-                    <div class="small text-muted">Telnet Holding</div>
-                    <div class="small text-muted">Tunis, Tunisia</div>
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <div>
-                    Developed a cross-platform system to test and monitor BLDC motors for drones, enabling real-time data acquisition and analysis.
-                    Technologies: Flutter, Express.js, SQLite, Python, Serial Communication.
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-                         <div class="card shadow border-0 rounded-4 mb-5">
-    <div class="card-body p-5">
-        <div class="row align-items-center gx-5">
-            <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                <div class="bg-light p-4 rounded-4">
-                    <div class="text-primary fw-bolder mb-2">July- August 2024</div>
-                    <div class="small fw-bolder">Software Engineer Intern</div>
-                    <div class="small text-muted">SHAMASH IT</div>
-                    <div class="small text-muted">Tunis, Tunisia</div>
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <div>
-                    Developed a comprehensive platform, "TeleWorkPro," for managing telecommuting requests and schedules for employees and employers. 
-                    Implemented role-based access control (employee/manager) to ensure secure handling of sensitive data, reducing telecommuting request processing times by 40%.
-                    Technologies: .NET Core, React, Entity Framework, SQL Server, JavaScript, Material-UI, Git.
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                        <div class="bg-light p-4 rounded-4">
-                                            <div class="text-primary fw-bolder mb-2">July-August 2023</div>
-                                            <div class="small fw-bolder">Web Developer Intern</div>
-                                            <div class="small text-muted">SMARTUP</div>
-                                            <div class="small text-muted">Tunis, Tunisia</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div>
-                                            During my internship at SmartUp, I delved into web development as an intern.
-                                            Working on the backend of projects,
-                                            I utilized Spring Boot, thus enhancing my programming skills and
-                                            understanding of web development.
-                                        </div>
-                                    </div>
+                    <div class="col-lg-10">
+                        <div class="about-content">
+                            <div class="section-header text-center mb-5">
+                                <div class="section-badge">
+                                    <i class="bi bi-person-circle"></i>
+                                    <span>About Me</span>
                                 </div>
+                                <h2 class="section-title">
+                                    Passionate <span class="highlight-gradient">Developer</span> &
+                                    <span class="highlight-gradient">Problem Solver</span>
+                                </h2>
+                                <p class="section-subtitle">
+                                    Crafting digital solutions with precision and creativity
+                                </p>
                             </div>
-                        </div>
-                    </section>
-                    <!-- Education Section-->
-                    <section>
-                        <h2 class="text-secondary fw-bolder mb-4">Education</h2>
-                        <!-- Education Card 1-->
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                        <div class="bg-light p-4 rounded-4">
-                                            <div class="text-secondary fw-bolder mb-2">2022 - 2025</div>
-                                            <div class="mb-2">
-                                                <div class="small fw-bolder">ESPRIT</div>
-                                                <div class="small text-muted">Aariana, Tunisia</div>
-                                            </div>
-                                            <div class="fst-italic">
-                                                <div class="small text-muted">Software engineering </div>
-                                                <div class="small text-muted">Student</div>
+                            
+                            <div class="row gx-5 align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="about-text">
+                                        <div class="text-block">
+                                            <h4 class="text-primary mb-3">Who I Am</h4>
+                                            <p class="mb-4">
+                                                I'm <strong>Houssem Meguebli</strong>, a passionate Full Stack Developer with 1+ years of experience 
+                                                creating innovative web solutions. I specialize in modern JavaScript frameworks and 
+                                                have a keen eye for user experience design.
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="text-block">
+                                            <h4 class="text-primary mb-3">What I Do</h4>
+                                            <p class="mb-4">
+                                                I transform ideas into digital reality through clean code, intuitive design, 
+                                                and scalable architecture. From concept to deployment, I ensure every project 
+                                                delivers exceptional user experiences.
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="social-connect">
+                                            <h5 class="mb-3">Let's Connect</h5>
+                                            <div class="social-links-about">
+                                                <a href="https://www.linkedin.com/in/houssemmeguebli/" target="_blank" class="social-link-about linkedin">
+                                                    <i class="bi bi-linkedin"></i>
+                                                    <span>LinkedIn</span>
+                                                </a>
+                                                <a href="https://github.com/houssemmeguebli" target="_blank" class="social-link-about github">
+                                                    <i class="bi bi-github"></i>
+                                                    <span>GitHub</span>
+                                                </a>
+                                                <a href="mailto:houssem.meguebli@esprit.tn" class="social-link-about email">
+                                                    <i class="bi bi-envelope"></i>
+                                                    <span>Email</span>
+                                                </a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div>
-
-                                            In my academic journey, I've immersed myself in programming languages,
-                                            software architecture,
-                                            and algorithmic design. The classroom serves as my testing ground, where I
-                                            delve into theoretical foundations and apply them to real-world scenarios
-                                            through hands-on projects. I thrive on challenges, from debugging intricate
-                                            code to architecting scalable systems,
-                                            as I navigate the multifaceted discipline of software engineering.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Education Card 2-->
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <div class="row align-items-center gx-5">
-                                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                        <div class="bg-light p-4 rounded-4">
-                                            <div class="text-secondary fw-bolder mb-2">2017 - 2020</div>
-                                            <div class="mb-2">
-                                                <div class="small fw-bolder">ISET DJERBA </div>
-                                                <div class="small text-muted">Djerba, Tunisia</div>
-                                            </div>
-                                            <div class="fst-italic">
-                                                <div class="small text-muted">Bachelor's degree</div>
-                                                <div class="small text-muted">Automation and industrial computing</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div>
-                                            Embarking on the intersection of technology and industry, my academic
-                                            journey led me to the realm of Automation and Industrial Computing.
-                                            Armed with a solid foundation in this dynamic field,
-                                            I've honed my skills in designing and implementing systems that seamlessly
-                                            integrate technology with industrial processes.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Divider-->
-                    <div class="pb-5"></div>
-                 <!-- Skills Section-->
-                    <section>
-                        <!-- Skillset Card-->
-                        <div class="card shadow border-0 rounded-4 mb-5">
-                            <div class="card-body p-5">
-                                <!-- Professional skills list-->
-                               <!-- Frontend list -->
-                        <div class="mb-5">
-                            <div class="d-flex align-items-center mb-4">
-                                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
-                                    <i class="bi bi-laptop"></i>
-                                </div>
-                                <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Frontend</span></h3>
-                            </div>
-                            <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                <div class="col mb-4 mb-md-0">
-                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                        <i class="fab fa-react me-2"></i> React
-                                    </div>
-                                </div>
-                                <div class="col mb-4 mb-md-0">
-                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                        <i class="fab fa-angular me-2"></i> Angular
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                        <img src="assets/Tailwind-removebg-preview.png" alt="Tailwind" class="me-2" style="width: 40px; height: 40px; object-fit: contain;">
-                                        Tailwind
                                     </div>
                                 </div>
                                 
-                            </div>
-                            <div class="row row-cols-1 row-cols-md-3">
-                                <div class="col">
-                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                        <i class="fab fa-bootstrap me-2"></i> Bootstrap
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-            <!-- Backend list -->
-            <div class="mb-5">
-                <div class="d-flex align-items-center mb-4">
-                    <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
-                        <i class="bi bi-code-slash"></i>
-                    </div>
-                    <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Backend</span></h3>
-                </div>
-                <div class="row row-cols-1 row-cols-md-3 mb-4">
-                    <div class="col mb-4 mb-md-0">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                            <i class="fab fa-windows me-2"></i> .NET
-                        </div>
-                    </div>
-                    <div class="col mb-4 mb-md-0">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                            <img src="assets/spring-boot-icon-2048x2046-hlpnsm8r.png" alt="Spring" class="me-2"
-                                style="width: 24px;"> Spring
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                            <i class="fab fa-symfony me-2"></i> Symfony
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Databases list -->
-            <div class="mb-5">
-                <div class="d-flex align-items-center mb-4">
-                    <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
-                        <i class="bi bi-server"></i>
-                    </div>
-                    <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Databases</span></h3>
-                </div>
-                <div class="row row-cols-1 row-cols-md-4 mb-4">
-                    <div class="col mb-4 mb-md-0">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                            <i class="bi bi-server me-2"></i> MySQL
-                        </div>
-                    </div>
-                    <div class="col mb-4 mb-md-0">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                            <i class="bi bi-server me-2"></i> PostgreSQL
-                        </div>
-                    </div>
-                    <div class="col mb-4 mb-md-0">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                            <i class="bi bi-server me-2"></i> SQL Server
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                            <i class="bi bi-cloud me-2"></i> Firebase
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Tools list -->
-            <div class="mb-5">
-                <div class="d-flex align-items-center mb-4">
-                    <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
-                        <i class="bi bi-tools"></i>
-                    </div>
-                    <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Tools</span></h3>
-                </div>
-                <div class="row row-cols-1 row-cols-md-3 mb-4">
-                    <div class="col mb-4 mb-md-0">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                            <i class="bi bi-graph-up me-2"></i> Power BI
-                        </div>
-                    </div>
-                    <div class="col mb-4 mb-md-0">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                            <i class="bi bi-file-earmark-text me-2"></i> Swagger
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                            <i class="fab fa-postman me-2"></i> Postman
-                        </div>
-                    </div>
-                </div>
-            </div>
-                                <!-- Languages list-->
-                                <div class="mb-0">
-                                    <div class="d-flex align-items-center mb-4">
-                                        <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
-                                            <i class="bi bi-code-slash"></i>
-                                        </div>
-                                        <h3 class="fw-bolder mb-0">
-                                            <span class="text-gradient d-inline">Languages</span>
-                                        </h3>
-                                    </div>
-                                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                <i class="fab fa-java me-2"></i> Java
+                                <div class="col-lg-6">
+                                    <div class="skills-showcase">
+                                        <div class="skill-category">
+                                            <h5 class="skill-title">Frontend</h5>
+                                            <div class="skill-tags">
+                                                <span class="skill-tag">Angular</span>
+                                                <span class="skill-tag">React</span>
+                                                <span class="skill-tag">Flutter</span>
                                             </div>
                                         </div>
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                <img src="assets/C.jpg" alt="C" class="me-2" style="width: 24px;"> C
+                                        <div class="skill-category">
+                                            <h5 class="skill-title">Backend</h5>
+                                            <div class="skill-tags">
+                                                <span class="skill-tag">Spring Boot</span>
+                                                <span class="skill-tag">.NET</span>
+                                                <span class="skill-tag">Node.js</span>
                                             </div>
                                         </div>
-                                        <div class="col">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                <img src="assets/182376186-b09b1ac6-7cc7-4ffa-964a-dce0a65db2f6.svg" alt="C#" class="me-2" style="width: 24px;"> C#
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row row-cols-1 row-cols-md-3">
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                <i class="fab fa-html5 me-2"></i> HTML
-                                            </div>
-                                        </div>
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                <i class="fab fa-css3-alt me-2"></i> CSS
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                <i class="fab fa-js-square me-2"></i> JavaScript
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- CI/CD list -->
-                                <div class="mb-5 mt-5">
-                                    <div class="d-flex align-items-center mb-4">
-                                        <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
-                                            <i class="bi bi-git"></i>
-                                        </div>
-                                        <h3 class="fw-bolder mb-0">
-                                            <span class="text-gradient d-inline">CI/CD</span>
-                                        </h3>
-                                    </div>
-                                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                <i class="bi bi-gear me-2"></i> Jenkins
-                                            </div>
-                                        </div>
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                <i class="fab fa-docker me-2"></i> Docker
-                                            </div>
-                                        </div>
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                <i class="bi bi-git me-2"></i> Git
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                <i class="bi bi-box-arrow-in-down me-2"></i> Nexus
-                                            </div>
-                                        </div>
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                <i class="bi bi-file-earmark-check me-2"></i> SonarQube
-                                            </div>
-                                        </div>
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                <i class="bi bi-speedometer2 me-2"></i> Prometheus
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row row-cols-1 row-cols-md-3">
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                <i class="bi bi-graph-up me-2"></i> Grafana
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Testing Frameworks list -->
-                                <div class="mb-5">
-                                    <div class="d-flex align-items-center mb-4">
-                                        <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
-                                            <i class="bi bi-check-circle"></i>
-                                        </div>
-                                        <h3 class="fw-bolder mb-0">
-                                            <span class="text-gradient d-inline">Testing Frameworks</span>
-                                        </h3>
-                                    </div>
-                                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                        <div class="col mb-4 mb-md-0">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                <i class="bi bi-box-arrow-in-right me-2"></i> JUnit
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                                                <i class="bi bi-file-earmark-code me-2"></i> NUnit
+                                        <div class="skill-category">
+                                            <h5 class="skill-title">Tools & Others</h5>
+                                            <div class="skill-tags">
+                                                <span class="skill-tag">Git</span>
+                                                <span class="skill-tag">Docker</span>
+                                                <span class="skill-tag">Azure</span>
+                                                <span class="skill-tag">Figma</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
-
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Projects Section-->
-        <section class="bg-light py-5" id="projets">
-            <div class="container px-5 mb-5">
-                <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+            </div>
+        </section>
+        <!-- Enhanced CTA Section-->
+        <section class="modern-cta-section py-5">
+            <div class="cta-background">
+                <div class="cta-particles"></div>
+                <div class="cta-gradient"></div>
+            </div>
+            <div class="container px-5 my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="cta-content text-center">
+                            <div class="cta-icon">
+                                <i class="bi bi-rocket-takeoff"></i>
+                            </div>
+                            <h2 class="cta-title">
+                                Ready to Build Something
+                                <span class="cta-highlight">Amazing</span> Together?
+                            </h2>
+                            <p class="cta-subtitle">
+                                Let's collaborate and turn your ideas into powerful digital solutions. 
+                                I'm here to help bring your vision to life.
+                            </p>
+                            
+                            <div class="cta-stats">
+                                <div class="cta-stat">
+                                    <span class="stat-number">4h</span>
+                                    <span class="stat-label">Response Time</span>
+                                </div>
+                                <div class="cta-stat">
+                                    <span class="stat-number">100%</span>
+                                    <span class="stat-label">Commitment</span>
+                                </div>
+                                <div class="cta-stat">
+                                    <span class="stat-number">∞</span>
+                                    <span class="stat-label">Possibilities</span>
+                                </div>
+                            </div>
+                            
+                            <div class="cta-actions">
+                                <a class="cta-btn-primary" href="#contact">
+                                    <span>Start a Project</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                                <a class="cta-btn-secondary" href="#resume">
+                                    <i class="bi bi-download"></i>
+                                    <span>Download CV</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <!-- Enhanced Resume Section-->
+        <section class="modern-resume-section py-5" id="resume">
+            <div class="container px-5">
+                <div class="section-header text-center mb-5">
+                    <div class="section-badge">
+                        <i class="bi bi-briefcase"></i>
+                        <span>Resume</span>
+                    </div>
+                    <h2 class="section-title">
+                        Professional <span class="highlight-gradient">Journey</span> &
+                        <span class="highlight-gradient">Achievements</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Building expertise through hands-on experience and continuous learning
+                    </p>
+                </div>
+                
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="width: 100%; margin: auto;">
-    <div class="row gx-0">
-        <!-- Colonne pour la vidéo -->
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
-            <!-- Main Banner Image -->
-            <div class="mb-3">
-                <img width="100%" style="object-fit: cover; border-radius: 10px;" src="assets/loginPage.png" alt="MotorBench Main Banner">
+                        <!-- Experience Timeline Section-->
+                        <div class="experience-timeline">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">
+                                    <i class="bi bi-briefcase-fill"></i>
+                                    Professional Experience
+                                </h3>
+                                <a class="download-cv-btn" href="assets/CV_Houssem_Meguebli.pdf" target="_blank">
+                                    <i class="bi bi-download"></i>
+                                    <span>Download CV</span>
+                                </a>
+                            </div>
+                            
+                            <div class="timeline-container">
+                                <!-- Experience Item 1 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-line"></div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <div class="experience-card">
+                                            <div class="experience-header">
+                                                <div class="company-info">
+                                                    <div class="company-logo">
+                                                        <i class="bi bi-building"></i>
+                                                    </div>
+                                                    <div class="company-details">
+                                                        <h4 class="position-title">Software Engineer Intern</h4>
+                                                        <h5 class="company-name">Telnet Holding</h5>
+                                                        <div class="location-date">
+                                                            <span class="location"><i class="bi bi-geo-alt"></i> Tunis, Tunisia</span>
+                                                            <span class="date"><i class="bi bi-calendar"></i> Feb - Jul 2025</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="experience-description">
+                                                <p>Developed a cross-platform system to test and monitor BLDC motors for drones, enabling real-time data acquisition and analysis.</p>
+                                                <div class="tech-stack">
+                                                    <span class="tech-tag">Flutter</span>
+                                                    <span class="tech-tag">Express.js</span>
+                                                    <span class="tech-tag">SQLite</span>
+                                                    <span class="tech-tag">Python</span>
+                                                    <span class="tech-tag">Serial Communication</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Experience Item 2 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-line"></div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <div class="experience-card">
+                                            <div class="experience-header">
+                                                <div class="company-info">
+                                                    <div class="company-logo">
+                                                        <i class="bi bi-code-slash"></i>
+                                                    </div>
+                                                    <div class="company-details">
+                                                        <h4 class="position-title">Software Engineer Intern</h4>
+                                                        <h5 class="company-name">SHAMASH IT</h5>
+                                                        <div class="location-date">
+                                                            <span class="location"><i class="bi bi-geo-alt"></i> Tunis, Tunisia</span>
+                                                            <span class="date"><i class="bi bi-calendar"></i> Jul - Aug 2024</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="experience-description">
+                                                <p>Developed "TeleWorkPro," a comprehensive platform for managing telecommuting requests and schedules. Implemented role-based access control, reducing processing times by 40%.</p>
+                                                <div class="tech-stack">
+                                                    <span class="tech-tag">.NET Core</span>
+                                                    <span class="tech-tag">React</span>
+                                                    <span class="tech-tag">Entity Framework</span>
+                                                    <span class="tech-tag">SQL Server</span>
+                                                    <span class="tech-tag">Material-UI</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Experience Item 3 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">
+                                        <div class="timeline-dot"></div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <div class="experience-card">
+                                            <div class="experience-header">
+                                                <div class="company-info">
+                                                    <div class="company-logo">
+                                                        <i class="bi bi-globe"></i>
+                                                    </div>
+                                                    <div class="company-details">
+                                                        <h4 class="position-title">Web Developer Intern</h4>
+                                                        <h5 class="company-name">SMARTUP</h5>
+                                                        <div class="location-date">
+                                                            <span class="location"><i class="bi bi-geo-alt"></i> Tunis, Tunisia</span>
+                                                            <span class="date"><i class="bi bi-calendar"></i> Jul - Aug 2023</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="experience-description">
+                                                <p>Focused on backend development using Spring Boot, enhancing programming skills and understanding of web development architecture.</p>
+                                                <div class="tech-stack">
+                                                    <span class="tech-tag">Spring Boot</span>
+                                                    <span class="tech-tag">Java</span>
+                                                    <span class="tech-tag">Backend Development</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Education Timeline Section-->
+                        <div class="education-timeline mt-5">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">
+                                    <i class="bi bi-mortarboard-fill"></i>
+                                    Education
+                                </h3>
+                            </div>
+                            
+                            <div class="timeline-container">
+                                <!-- Education Item 1 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">
+                                        <div class="timeline-dot education"></div>
+                                        <div class="timeline-line"></div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <div class="education-card">
+                                            <div class="education-header">
+                                                <div class="school-info">
+                                                    <div class="school-logo">
+                                                        <i class="bi bi-mortarboard"></i>
+                                                    </div>
+                                                    <div class="school-details">
+                                                        <h4 class="degree-title">Software Engineering</h4>
+                                                        <h5 class="school-name">ESPRIT</h5>
+                                                        <div class="location-date">
+                                                            <span class="location"><i class="bi bi-geo-alt"></i> Ariana, Tunisia</span>
+                                                            <span class="date"><i class="bi bi-calendar"></i> 2022 - 2025</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="education-description">
+                                                <p>Immersed in programming languages, software architecture, and algorithmic design. Applying theoretical foundations to real-world scenarios through hands-on projects and system development.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Education Item 2 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">
+                                        <div class="timeline-dot education"></div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <div class="education-card">
+                                            <div class="education-header">
+                                                <div class="school-info">
+                                                    <div class="school-logo">
+                                                        <i class="bi bi-gear"></i>
+                                                    </div>
+                                                    <div class="school-details">
+                                                        <h4 class="degree-title">Bachelor's Degree</h4>
+                                                        <h5 class="school-name">ISET DJERBA</h5>
+                                                        <div class="location-date">
+                                                            <span class="location"><i class="bi bi-geo-alt"></i> Djerba, Tunisia</span>
+                                                            <span class="date"><i class="bi bi-calendar"></i> 2017 - 2020</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="education-description">
+                                                <p><strong>Automation and Industrial Computing</strong> - Focused on the intersection of technology and industry, designing systems that integrate technology with industrial processes.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- Row for additional images -->
-            <div class="row gx-2">
-                <div class="col-6 mb-2">
-                    <img width="100%" style="object-fit: cover; border-radius: 10px;" src="assets/taskStatMobile.png" alt="MotorBench Image 1">
-                </div>
-                <div class="col-6 mb-2">
-                    <img width="100%" style="object-fit: cover; border-radius: 10px;" src="assets/torqueCalibration.png" alt="MotorBench Image 2">
-                </div>
-                <div class="col-6 mb-2">
-                    <img width="100%" style="object-fit: cover; border-radius: 10px;" src="assets/EmployeeStat.png" alt="MotorBench Image 3">
-                </div>
-                <div class="col-6 mb-2">
-                    <img width="100%" style="object-fit: cover; border-radius: 10px;" src="assets/LLM.png" alt="MotorBench Image 4">
-                </div>
-            </div>
-        </div>
+        </section>
         
-        <!-- Colonne pour les autres éléments -->
-        <div class="col-lg-6">
-            <div class="card-body p-5">
-                <h2 class="fw-bolder">MotorBench Real Time BLDC Testing & Monitoring Platform</h2>
-                <p>
-                    MotorBench is a cross-platform application designed for automated and manual testing of BLDC motors, streamlining validation processes in embedded and drone systems. It offers real-time UART/USB communication, advanced task and script management, unit conversion tools, and a comprehensive testing workflow. Featuring AI integration with a chat assistant and an XGBoost-based machine learning model for motor parameter optimization, MotorBench enhances usability and performance. Additional modules include sensor calibration, error handling, and safety alert systems, making it an ergonomic and robust tool for engineers.
-                </p>
-                <div>
-                    <span class="badge bg-gradient-primary-to-secondary text-white me-2">Flutter <i class="fab fa-flutter"></i></span>
-                    <span class="badge bg-gradient-primary-to-secondary text-white me-2">Express.js <i class="fab fa-node-js"></i></span>
-                    <span class="badge bg-gradient-primary-to-secondary text-white me-2">SQLite <i class="fas fa-database"></i></span>
-                    <span class="badge bg-gradient-primary-to-secondary text-white me-2">Python <i class="fab fa-python"></i></span>
-                    <span class="badge bg-gradient-primary-to-secondary text-white me-2">XGBoost <i class="fas fa-chart-line"></i></span>
-                    <span class="badge bg-gradient-primary-to-secondary text-white me-2">SerialPort <i class="fas fa-plug"></i></span>
-                    <span class="badge bg-gradient-primary-to-secondary text-white me-2">Docker <i class="fab fa-docker"></i></span>
-                    <span class="badge bg-gradient-primary-to-secondary text-white me-2">Gemini Flash 1.5 <i class="fas fa-robot"></i></span>
+
+        <!-- Enhanced Projects Section-->
+        <section class="modern-projects-section py-5" id="projets">
+            <div class="container px-5">
+                <div class="section-header text-center mb-5">
+                    <div class="section-badge">
+                        <i class="bi bi-code-slash"></i>
+                        <span>Portfolio</span>
+                    </div>
+                    <h2 class="section-title">
+                        Featured <span class="highlight-gradient">Projects</span> &
+                        <span class="highlight-gradient">Innovations</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Showcasing my passion for creating impactful digital solutions
+                    </p>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-                        <!-- Project Card 1-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="width: 100%; margin: auto;">
-                            <div class="row gx-0">
-                                <!-- Colonne pour la vidéo -->
-                                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
-                                    <!-- Main Banner Image -->
-                                    <div class="mb-3">
-                                        <img width="100%" style="object-fit: cover; border-radius: 10px;" src="assets/2.png" alt="Main Banner">
-                                    </div>
-                                    <!-- Row for additional images -->
-                                    <div class="row gx-2">
-                                        <div class="col-6 mb-2">
-                                            <img width="100%" style="object-fit: cover; border-radius: 10px;" src="assets/3.png" alt="Image 3">
-                                        </div>
-                                        <div class="col-6 mb-2">
-                                            <img width="100%" style="object-fit: cover; border-radius: 10px;" src="assets/4.png" alt="Image 2">
-                                        </div>
-                                        <div class="col-6 mb-2">
-                                            <img width="100%" style="object-fit: cover; border-radius: 10px;" src="assets/5.png" alt="Image 2">
-                                        </div>
-                                        <div class="col-6 mb-2">
-                                            <img width="100%" style="object-fit: cover; border-radius: 10px;" src="assets/6.png" alt="Image 2">
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Colonne pour les autres éléments -->
-                                <div class="col-lg-6">
-                                    <div class="card-body p-5">
-                                        <h2 class="fw-bolder">Integrated CI/CD Pipeline with Monitoring</h2>
-                                        <p>
-                                            This project showcases the creation and implementation of a fully automated CI/CD pipeline, optimizing software development from integration to deployment. It leverages powerful tools such as Jenkins for automation, Docker for containerization, and Prometheus/Grafana for real-time monitoring. 
-                                            Key features include automated unit tests with JUnit and Mockito, test coverage analysis with JaCoCo, continuous integration and code quality checks via SonarQube, and artifact management using Nexus.
-                                        </p>
-                                        <div>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Jenkins <i class="fab fa-jenkins"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Docker <i class="fab fa-docker"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">SonarQube <i class="fas fa-cogs"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Mockito <i class="fab fa-java"></i></span>
-                                            <br>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">JaCoCo <i class="fas fa-chart-line"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Nexus <i class="fas fa-database"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Prometheus <i class="fab fa-twitch"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Grafana <i class="fab fa-github"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="projects-grid">
+                    <!-- Jibli Project -->
+                    <div class="project-card">
+                        <div class="project-status">
+                            <span class="status-badge current">Latest Project</span>
+                        </div>
+                        <div class="project-images">
+                            <div class="image-gallery" data-images='["assets/jibli-main.png", "assets/jibli-dashboard.png"]'>
+                                <img class="gallery-image" src="assets/jibli-main.png" alt="Jibli Platform">
+                                <button class="gallery-btn prev-btn" onclick="previousImage(this)"><i class="bi bi-chevron-left"></i></button>
+                                <button class="gallery-btn next-btn" onclick="nextImage(this)"><i class="bi bi-chevron-right"></i></button>
                             </div>
                         </div>
-                        
-                        
-                         <br>
-                         <br>
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="width: 100%; margin: auto;">
-                            <div class="row gx-0">
-                                <!-- Column for the video -->
-                                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
-                                    <!-- Main Banner Image -->
-                                    <div class="mb-3">
-                                        <img width="100%" style="object-fit: cover; border-radius: 10px;" src="assets/LandingPage.png" alt="Main Banner">
-                                    </div>
-                                    <!-- Row for additional images -->
-                                    <div class="row gx-2">
-                                        <div class="col-6 mb-2">
-                                            <img width="100%" style="object-fit: cover; border-radius: 10px;" src="assets/CArt.png" alt="Image 3">
-                                        </div>
-
-                                        <div class="col-6 mb-2">
-                                            <img width="100%" style="object-fit: cover; border-radius: 10px;" src="assets/product.png" alt="Image 2">
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                                
-                                <!-- Column for the other elements -->
-                                <div class="col-lg-6">
-                                    <div class="card-body p-5">
-                                        <h2 class="fw-bolder">MegStore</h2>
-                                        <p>
-                                            MegStore is a dynamic eCommerce platform that provides an outstanding shopping experience for customers and offers powerful management tools for store owners. 
-                                            With an advanced UI, real-time order management, and integrated analytics, MegStore empowers businesses to streamline their online sales.
-                                        </p>
-                                        <a href="https://megstore.vercel.app/" target="_blank" class="btn btn-primary mb-3">Visit MegStore</a>
-                                        <div>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">ASP.NET Core <i class="fab fa-microsoft"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">React <i class="fab fa-react"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Power BI <i class="fas fa-chart-bar"></i></span>
-                                            <br>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">SQL Server <i class="fas fa-database"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">MUI <i class="fas fa-palette"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Tailwind CSS <i class="fab fa-css3-alt"></i></span>
-                                        </div>
-                                    </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Jibli – Full-Stack Delivery & E-commerce Platform</h3>
+                                <div class="project-category">
+                                    <i class="bi bi-truck"></i>
+                                    <span>E-commerce & Delivery</span>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <br>
-                        <br>
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="width: 100%; margin: auto;">
-                            <div class="row gx-0">
-                                <!-- Colonne pour la vidéo -->
-                                <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                                    <video width="100%" style="height: 100%; object-fit:initial;" controls>
-                                        <source src="assets/TeleWorkPro.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                                <!-- Colonne pour les autres éléments -->
-                                <div class="col-lg-6">
-                                    <div class="card-body p-5">
-                                        <h2 class="fw-bolder">TeleWorkPro</h2>
-                                        <p>
-                                            TeleWorkPro simplifies remote work management with its intuitive web app. 
-                                            Designed to handle requests, track productivity, 
-                                            it's the ultimate solution for companies embracing the future of work. 
-                                            Efficient, flexible, and robust, TeleWorkPro is your partner for optimized teleworking processes.
-                                        </p>
-                                        <div>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">.NET <i class="fab fa-microsoft"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">React <i class="fab fa-react"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">MUI <i class="fas fa-palette"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">HTML <i class="fab fa-html5"></i></span>
-                                            <br>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">CSS <i class="fab fa-css3-alt"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Bootstrap <i class="fab fa-bootstrap"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">SQL Server <i class="fas fa-database"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <p class="project-description">
+                                Scalable delivery and e-commerce platform connecting customers, companies, and delivery personnel. 
+                                Features real-time tracking, secure authentication, analytics dashboards, and optimized performance with Redis caching.
+                            </p>
+                            <div class="project-actions">
+                                <a href="https://jibli.ovh" target="_blank" class="project-link">
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                    <span>Live Platform</span>
+                                </a>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">Docker</span>
                             </div>
                         </div>
-
-                        <br>
-                        <br>
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="width: 100% ; margin: auto; ;">
-                            <div class="row gx-0">
-                                <!-- Colonne pour la vidéo -->
-                                <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                                    <video width="100%" style="height: 100%; object-fit:initial;" controls>
-                                        <source src="assets/CoConsult.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                                <!-- Colonne pour les autres éléments -->
-                                <div class="col-lg-6 ">
-                                    <div class="card-body p-5">
-                                        <h2 class="fw-bolder">COCONSULT</h2>
-                                        <p>
-                                          
-                                        CoConsult is revolutionizing HR with its streamlined web app, 
-                                        simplifying recruitment, employee management, and performance tracking. 
-                                        Empowering efficient talent acquisition, personnel administration, and evaluation, it's your comprehensive solution for optimized HR operations. 
-                                        </p>
-                                        <div>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Spring <i class="fab fa-java"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Angular <i class="fab fa-angular"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">MySQL <i class="fas fa-database"></i></span>
-
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">HTML <i class="fab fa-html5"></i></span>
-                                            <br>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">CSS <i class="fab fa-css3-alt"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Bootstrap <i class="fab fa-bootstrap"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    
+                    <!-- MotorBench Project -->
+                    <div class="project-card">
+                        <div class="project-images">
+                            <div class="image-gallery" data-images='["assets/loginPage.png", "assets/taskStatMobile.png", "assets/torqueCalibration.png", "assets/EmployeeStat.png", "assets/LLM.png"]'>
+                                <img class="gallery-image" src="assets/loginPage.png" alt="MotorBench">
+                                <button class="gallery-btn prev-btn" onclick="previousImage(this)"><i class="bi bi-chevron-left"></i></button>
+                                <button class="gallery-btn next-btn" onclick="nextImage(this)"><i class="bi bi-chevron-right"></i></button>
                             </div>
                         </div>
-                        <br>
-                        <br>
-                      
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="width: 100% ; margin: auto; ;">
-                            <div class="row gx-0">
-                                <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                                    
-                                    <video width="100%" style="height: 100%; object-fit:initial;" controls>
-                                        <source src="assets/infinityFarm.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                                <div class="col-lg-6 ">
-                                    <div class="card-body p-5">
-                                        <h2 class="fw-bolder">INFINITYFARM</h2>
-                                        <p>INFINITYFARM is designed to make farming easier by solving many common challenges farmers face every day. Whether it's keeping track of money, organizing fields, or managing equipment, our platform has user-friendly tools to help farmers handle these tasks efficiently.</p>
-                                        <div>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Symfony <i class="fab fa-symfony"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">JavaScript <i class="fab fa-js-square"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">MySQL <i class="fas fa-database"></i></span>
-
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">HTML <i class="fab fa-html5"></i></span>
-                                            <br>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">CSS <i class="fab fa-css3-alt"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Bootstrap <i class="fab fa-bootstrap"></i></span>
-                                        </div>
-                                    </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">MotorBench Real Time BLDC Testing Platform</h3>
+                                <div class="project-category">
+                                    <i class="bi bi-gear-fill"></i>
+                                    <span>Dev & AI</span>
                                 </div>
                             </div>
-                        </div>
-                        <br><br>
-
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="width: 100% ; margin: auto; ;">
-                            <div class="row gx-0">
-                                <!-- Colonne pour la vidéo -->
-                                <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                                    
-                                    <img width="100%" style="height: 100%; object-fit:initial;" src="assets/foyer.webp">
-                                      
-                                </div>
-                                <!-- Colonne pour les autres éléments -->
-                                <div class="col-lg-6 ">
-                                    <div class="card-body p-5">
-                                        <h2 class="fw-bolder">DormBloc (backend)</h2>
-                                        <p>
-
-                                            The ultimate web app for university dorm management. Simplifying resident registrations, room assignments, maintenance requests, and communication. Designed for efficiency, it streamlines administrative tasks seamlessly. 
-                                            DormBloc offers a comprehensive solution to enhance dormitory management and living experiences.
-                                        </p>
-                                        <div>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Spring <i class="fab fa-java"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">MySQL <i class="fas fa-database"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Swagger <i class="fas fa-swagger"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <p class="project-description">
+                                Cross-platform application for automated BLDC motor testing with real-time communication, 
+                                AI integration, and XGBoost-based optimization for enhanced performance in embedded systems.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Express.js</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">XGBoost</span>
+                                <span class="tech-tag">AI/ML</span>
                             </div>
                         </div>
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="width: 100%; margin: auto;">
-                            <div class="row gx-0">
-                                <!-- Column for the image -->
-                                <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                                    <img width="100%" style="height: 100%; object-fit:initial;" src="assets/test.jpg" alt="Airport Management">
-                                </div>
-                                <!-- Column for the other elements -->
-                                <div class="col-lg-6">
-                                    <div class="card-body p-5">
-                                        <h2 class="fw-bolder">AirManage </h2>
-                                        <p>
-                                            AirManage is the ultimate web app for airport management, 
-                                            designed to enhance efficiency with a user-friendly interface and a robust backend. 
-                                            It streamlines crucial tasks such as flight scheduling, passenger management, and resource allocation. 
-                                            By seamlessly improving airport operations.
-                                            
-
-                                        </p>
-                                        <div>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">.NET MVC <i class="fab fa-microsoft"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Entity Framework <i class="fas fa-database"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">MySQL <i class="fas fa-database"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    
+                    <!-- Project Card 1 -->
+                    <div class="project-card">
+                        <div class="project-images">
+                            <div class="image-gallery" data-images='[ "assets/2.png", "assets/3.png", "assets/4.png", "assets/5.png", "assets/6.png"]'>
+                                <img class="gallery-image" src="assets/2.png" alt="CI/CD Pipeline">
+                                <button class="gallery-btn prev-btn" onclick="previousImage(this)"><i class="bi bi-chevron-left"></i></button>
+                                <button class="gallery-btn next-btn" onclick="nextImage(this)"><i class="bi bi-chevron-right"></i></button>
                             </div>
                         </div>
-                        
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5" style="width: 100% ; margin: auto; ;">
-                            <div class="row gx-0">
-                                <!-- Colonne pour la vidéo -->
-                                <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                                    
-                                    <video width="100%" style="height: 100%; object-fit:initial;" controls>
-                                        <source src="assets/Video.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                                <!-- Colonne pour les autres éléments -->
-                                <div class="col-lg-6 ">
-                                    <div class="card-body p-5">
-                                        <h2 class="fw-bolder">Municipal Elections App</h2>
-                                        <p>Developing a desktop application for generating municipal elections is designed to simplify 
-                                            the management of municipal elections on Linux (Ubuntu). This application aims to provide a comprehensive solution 
-                                            for the efficient management of electoral processes by offering user-friendly tools to users.
-
-                                        </p>
-                                        <div>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">C <i class="fas fa-code"></i></span>
-                                            <span class="badge bg-gradient-primary-to-secondary text-white me-2">Glade <i class="fas fa-window-maximize"></i></span>
-                                            
-                                        </div>
-                                    </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Integrated CI/CD Pipeline with Monitoring</h3>
+                                <div class="project-category">
+                                    <i class="bi bi-gear-wide-connected"></i>
+                                    <span>DevOps</span>
                                 </div>
                             </div>
+                            <p class="project-description">
+                                Fully automated CI/CD pipeline with Jenkins, Docker containerization, and real-time monitoring 
+                                using Prometheus/Grafana for optimized software development lifecycle.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Jenkins</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">SonarQube</span>
+                                <span class="tech-tag">Prometheus</span>
+                                <span class="tech-tag">Grafana</span>
+                            </div>
                         </div>
+                    </div>
+                    
+                    <!-- Project Card 2 -->
+                    <div class="project-card">
+                        <div class="project-images">
+                            <div class="image-gallery" data-images='["assets/LandingPage.png", "assets/CArt.png", "assets/product.png"]'>
+                                <img class="gallery-image" src="assets/LandingPage.png" alt="MegStore">
+                                <button class="gallery-btn prev-btn" onclick="previousImage(this)"><i class="bi bi-chevron-left"></i></button>
+                                <button class="gallery-btn next-btn" onclick="nextImage(this)"><i class="bi bi-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">MegStore</h3>
+                                <div class="project-category">
+                                    <i class="bi bi-shop"></i>
+                                    <span>E-Commerce</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Dynamic eCommerce platform with advanced UI, real-time order management, and integrated analytics 
+                                for streamlined online business operations.
+                            </p>
+                            <div class="project-actions">
+                                <a href="https://megstore.vercel.app/" target="_blank" class="project-link">
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                    <span>Live Platform</span>
+                                </a>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">ASP.NET Core</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 3 -->
+                    <div class="project-card">
+                        <div class="project-media">
+                            <video controls>
+                                <source src="assets/TeleWorkPro.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">TeleWorkPro</h3>
+                                <div class="project-category">
+                                    <i class="bi bi-laptop"></i>
+                                    <span>Remote Work</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Intuitive web application for remote work management, handling requests and tracking productivity 
+                                for companies embracing the future of work.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">.NET</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">MUI</span>
+                                <span class="tech-tag">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 4 -->
+                    <div class="project-card">
+                        <div class="project-media">
+                            <video controls>
+                                <source src="assets/CoConsult.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">CoConsult</h3>
+                                <div class="project-category">
+                                    <i class="bi bi-people-fill"></i>
+                                    <span>HR Management</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Streamlined HR web application revolutionizing recruitment, employee management, and performance 
+                                tracking for optimized HR operations.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Spring</span>
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 5 -->
+                    <div class="project-card">
+                        <div class="project-media">
+                            <video controls>
+                                <source src="assets/infinityFarm.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">InfinityFarm</h3>
+                                <div class="project-category">
+                                    <i class="bi bi-tree-fill"></i>
+                                    <span>Agriculture</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Comprehensive farming platform solving daily challenges with user-friendly tools for financial tracking, 
+                                field organization, and equipment management.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Symfony</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 6 -->
+                    <div class="project-card">
+                        <div class="project-images">
+                            <div class="main-image">
+                                <img src="assets/foyer.webp" alt="DormBloc">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">DormBloc</h3>
+                                <div class="project-category">
+                                    <i class="bi bi-building"></i>
+                                    <span>Backend API</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                University dorm management system simplifying resident registrations, room assignments, 
+                                and maintenance requests with efficient administrative tools.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Spring</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Swagger</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 7 -->
+                    <div class="project-card">
+                        <div class="project-images">
+                            <div class="main-image">
+                                <img src="assets/test.jpg" alt="AirManage">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">AirManage</h3>
+                                <div class="project-category">
+                                    <i class="bi bi-airplane"></i>
+                                    <span>Management System</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Comprehensive airport management application streamlining flight scheduling, passenger management, 
+                                and resource allocation with user-friendly interface.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">.NET MVC</span>
+                                <span class="tech-tag">Entity Framework</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 8 -->
+                    <div class="project-card">
+                        <div class="project-media">
+                            <video controls>
+                                <source src="assets/Video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Municipal Elections App</h3>
+                                <div class="project-category">
+                                    <i class="bi bi-vote-fill"></i>
+                                    <span>Desktop App</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Desktop application for managing municipal elections on Linux, providing comprehensive tools 
+                                for efficient electoral process management.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">Glade</span>
+                                <span class="tech-tag">Linux</span>
+                            </div>
+                        </div>
+                    </div>
                         
                     </div>
                 </div>
@@ -874,118 +887,172 @@
             
         </section>
         
-        <!-- End Projects Section-->
-        <section class="py-5" id="contact">
-            <div class="container px-5">
-                <!-- Contact form-->
-                <div class="bg-light rounded-4 py-5 px-4 px-md-5">
-                    <div class="text-center mb-5">
-                        <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i
-                                class="bi bi-envelope"></i></div>
-                        <h1 class="fw-bolder">Get in touch</h1>
-                        <p class="lead fw-normal text-muted mb-0">Let's work together!</p>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-8 col-xl-6">
-                            <form id="contactForm" action="https://formspree.io/f/xvoeobqn" method="POST" onsubmit="submitForm(event)">
-
-                                <!-- Form fields here -->
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" required id="name" name="name" type="text" placeholder="Enter your name..." />
-                                    <label for="name">Full name</label>
+        <!-- New Contact Section-->
+        <section class="new-contact-section" id="contact">
+            <div class="container px-5 py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="contact-card">
+                            <div class="contact-header text-center mb-5">
+                                <div class="contact-icon">
+                                    <i class="bi bi-envelope-heart"></i>
                                 </div>
-                                <!-- Email address input -->
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" required id="email" name="email" type="email" placeholder="name@example.com" />
-                                    <label for="email">Email address</label>
+                                <h2 class="contact-title">Let's Work Together</h2>
+                                <p class="contact-subtitle">Ready to bring your ideas to life? Drop me a message!</p>
+                            </div>
+                            
+                            <div class="contact-info-row">
+                                <div class="info-item">
+                                    <i class="bi bi-envelope"></i>
+                                    <span>houssem.meguebli@esprit.tn</span>
                                 </div>
-                                <!-- Phone number input -->
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" required id="phone" name="phone" type="tel" placeholder="(123) 456-7890" />
-                                    <label for="phone">Phone number</label>
+                                <div class="info-item">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span>Tunis, Tunisia</span>
                                 </div>
-                                <!-- Message input -->
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control" required id="message" name="message" placeholder="Enter your message here..." style="height: 10rem"></textarea>
-                                    <label for="message">Message</label>
+                                <div class="info-item">
+                                    <i class="bi bi-clock"></i>
+                                    <span>4h Response</span>
                                 </div>
-                                <!-- Submit Button -->
-                                <div class="d-grid">
-                                    <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
+                            </div>
+                            
+                            <form id="contactForm" action="https://formspree.io/f/xvoeobqn" method="POST" onsubmit="submitForm(event)" class="contact-form">
+                                <div class="form-group">
+                                    <input type="text" name="name" required class="form-control" placeholder="Your Name">
                                 </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" required class="form-control" placeholder="Your Email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" required class="form-control" rows="5" placeholder="Tell me about your project..."></textarea>
+                                </div>
+                                <button type="submit" class="contact-btn" id="submitButton">
+                                    <span class="btn-text">Send Message</span>
+                                    <i class="bi bi-send"></i>
+                                </button>
                             </form>
-                        </div>
-                    </div>                    
-                    <script>
-                        function submitForm(event) {
-                            event.preventDefault(); // Prevent the default form submission
-                    
-                            // Get the submit button and add a loading state
-                            const submitButton = document.getElementById("submitButton");
-                            submitButton.disabled = true;
-                            submitButton.innerHTML = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submitting...`;
-                    
-                            var xhr = new XMLHttpRequest();
-                            xhr.open("POST", "https://formspree.io/f/xvoeobqn");
-                            xhr.setRequestHeader("Content-Type", "application/json");
-                            xhr.onload = function () {
-                                submitButton.disabled = false;
-                                submitButton.innerHTML = "Submit"; // Reset button state
-                    
-                                if (xhr.status === 200) {
-                                    // Show SweetAlert2 success message
-                                    Swal.fire({
-                                        title: 'Success!',
-                                        text: 'Your message has been successfully submitted. Thank you!',
-                                        icon: 'success',
-                                        confirmButtonText: 'OK'
-                                    }).then(() => {
-                                        // Reset the form after user closes the alert
-                                        document.getElementById("contactForm").reset();
-                                    });
-                                } else {
-                                    // Show SweetAlert2 error message
-                                    Swal.fire({
-                                        title: 'Error!',
-                                        text: 'Something went wrong. Please try again later.',
-                                        icon: 'error',
-                                        confirmButtonText: 'OK'
-                                    });
-                                }
-                            };
-                    
-                            // Collect form data and send request
-                            var formData = new FormData(document.getElementById("contactForm"));
-                            xhr.send(JSON.stringify(Object.fromEntries(formData)));
-                        }
-                    </script>
+                            
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/houssemmeguebli/" target="_blank" class="social-link">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/houssemmeguebli" target="_blank" class="social-link">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="mailto:houssem.meguebli@esprit.tn" class="social-link">
+                                    <i class="bi bi-envelope"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <script>
+                function submitForm(event) {
+                    event.preventDefault();
+                    const submitButton = document.getElementById("submitButton");
+                    const btnText = submitButton.querySelector('.btn-text');
+                    
+                    submitButton.disabled = true;
+                    btnText.textContent = 'Sending...';
+                    
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("POST", "https://formspree.io/f/xvoeobqn");
+                    xhr.setRequestHeader("Content-Type", "application/json");
+                    xhr.onload = function () {
+                        submitButton.disabled = false;
+                        btnText.textContent = 'Send Message';
+                        
+                        if (xhr.status === 200) {
+                            Swal.fire({
+                                title: 'Message Sent!',
+                                text: 'Thank you for reaching out. I\'ll get back to you soon!',
+                                icon: 'success',
+                                confirmButtonText: 'Great!'
+                            }).then(() => {
+                                document.getElementById("contactForm").reset();
+                            });
+                        } else {
+                            Swal.fire({
+                                title: 'Oops!',
+                                text: 'Something went wrong. Please try again.',
+                                icon: 'error',
+                                confirmButtonText: 'OK'
+                            });
+                        }
+                    };
+                    
+                    var formData = new FormData(document.getElementById("contactForm"));
+                    xhr.send(JSON.stringify(Object.fromEntries(formData)));
+                }
+            </script>
         </section>
-        <button class="btn btn-primary" onclick="scrollToTop()" id="scrollToTopBtn"><i
-            class="fas fa-arrow-up"></i></button>
+
     </main>
 
-    <!-- Footer-->
-
-    <footer class="bg-gradient-light py-5 mt-auto">
+    <!-- Modern Independent Footer-->
+    <footer class="modern-footer-section">
+        <div class="footer-waves"></div>
         <div class="container px-5">
-            <hr class="mb-4">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto">
-                    <div class="small m-0 text-muted">&copy; 2025</div>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <span>H</span>
+                    </div>
+                    <h4>Houssem Meguebli</h4>
+                    <p>Full Stack Developer crafting digital experiences with modern technologies and innovative solutions.</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/houssemmeguebli/" target="_blank" class="social-icon linkedin">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/houssemmeguebli" target="_blank" class="social-icon github">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="mailto:houssem.meguebli@esprit.tn" class="social-icon email">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-auto">
-                    <a class="small text-muted me-3" href="https://www.linkedin.com/in/houssem-meguebli-65a98b166/"
-                        target="_blank" title="LinkedIn"><i class="fab fa-linkedin" style="color: #0e76a8;"></i></a>
-                    <a class="small text-muted me-3" href="https://github.com/houssemmeguebli" target="_blank"
-                        title="GitHub"><i class="fab fa-github"></i></a>
-                    <span class="text-muted me-2"><i class="fas fa-envelope"></i></span>
-                    <span class="text-muted">houssem.meguebli@esprit.tn</span>
+                
+                <div class="footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#mainHeader">Home</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#projets">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
+                
+                <div class="footer-contact">
+                    <h5>Get In Touch</h5>
+                    <div class="contact-item">
+                        <i class="bi bi-envelope"></i>
+                        <span>houssem.meguebli@esprit.tn</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>Tunis, Tunisia</span>
+                    </div>
+                    <div class="availability">
+                        <div class="status-dot"></div>
+                        <span>Available for projects</span>
+                    </div>
+                </div>
+            </div>
 
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; <span id="currentYear"></span> Houssem Meguebli.</p>
+                </div>
+                <div class="footer-cta">
+                    <a href="#contact" class="cta-link">
+                        <span>Let's Work Together</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
@@ -994,8 +1061,6 @@
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 
       <!-- sweetalert2 Library-->
@@ -1008,6 +1073,11 @@
     gtag('js', new Date());
 
     gtag('config', 'G-TWS73P9FD8');
+    </script>
+    <script src="js/navbar.js"></script>
+    <script src="js/gallery.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
 </body>
 

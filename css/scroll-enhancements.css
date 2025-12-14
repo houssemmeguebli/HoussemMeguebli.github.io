@@ -1,0 +1,71 @@
+/* Enhanced Scroll Bar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #1e30f3, #e21e80);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #e21e80, #1e30f3);
+}
+
+/* Enhanced Scroll to Top Button */
+#scrollToTopBtn {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    width: 50px !important;
+    height: 50px !important;
+    background: linear-gradient(135deg, #1e30f3, #e21e80) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 50% !important;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 20px rgba(30, 48, 243, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#scrollToTopBtn.show {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+}
+
+#scrollToTopBtn:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 30px rgba(30, 48, 243, 0.4);
+}
+
+#scrollToTopBtn:active {
+    transform: translateY(-2px) scale(1.05);
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scroll animation */
+@keyframes scrollPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+#scrollToTopBtn:hover {
+    animation: scrollPulse 1s infinite;
+}
