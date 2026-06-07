@@ -26,6 +26,182 @@
     <link href="css/scroll-enhancements.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
+    <!-- ====== Lightbox Styles ====== -->
+    <style>
+        /* Overlay */
+        #lb-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 99999;
+            align-items: center;
+            justify-content: center;
+        }
+        #lb-overlay.lb-open {
+            display: flex;
+            animation: lb-fade-in 0.25s ease;
+        }
+        @keyframes lb-fade-in {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Blurred backdrop */
+        #lb-backdrop {
+            position: absolute;
+            inset: 0;
+            background: rgba(5, 5, 15, 0.88);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+        }
+
+        /* Dialog box */
+        #lb-dialog {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 94vw;
+            max-width: 1200px;
+            max-height: 95vh;
+            padding: 0;
+            animation: lb-scale-in 0.28s cubic-bezier(.22,.68,0,1.2);
+        }
+        @keyframes lb-scale-in {
+            from { transform: scale(0.88); opacity: 0; }
+            to   { transform: scale(1);    opacity: 1; }
+        }
+
+        /* Main image wrapper */
+        #lb-img-wrap {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-height: 72vh;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        #lb-main-img {
+            display: block;
+            max-width: 100%;
+            max-height: 72vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            transition: opacity 0.3s ease;
+            border-radius: 12px;
+        }
+
+        /* Spinner */
+        #lb-loader {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+        }
+        #lb-loader span {
+            width: 44px; height: 44px;
+            border: 3px solid rgba(255,255,255,0.15);
+            border-top-color: #a78bfa;
+            border-radius: 50%;
+            animation: lb-spin 0.7s linear infinite;
+        }
+        @keyframes lb-spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Close button */
+        #lb-close {
+            position: fixed;
+            top: 16px; right: 20px;
+            z-index: 2;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            color: #fff;
+            width: 44px; height: 44px;
+            border-radius: 50%;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: background 0.2s, transform 0.2s;
+            backdrop-filter: blur(8px);
+        }
+        #lb-close:hover { background: rgba(255,255,255,0.2); transform: scale(1.1); }
+
+        /* Prev / Next */
+        #lb-prev, #lb-next {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            color: #fff;
+            width: 52px; height: 52px;
+            border-radius: 50%;
+            font-size: 1.3rem;
+            cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: background 0.2s, transform 0.2s;
+            backdrop-filter: blur(8px);
+        }
+        #lb-prev { left: 16px; }
+        #lb-next { right: 16px; }
+        #lb-prev:hover, #lb-next:hover {
+            background: rgba(167,139,250,0.25);
+            transform: translateY(-50%) scale(1.08);
+        }
+
+        /* Counter */
+        #lb-counter {
+            margin-top: 14px;
+            color: rgba(255,255,255,0.55);
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        /* Thumbnail strip */
+        #lb-thumbnails {
+            display: flex;
+            gap: 10px;
+            margin-top: 14px;
+            overflow-x: auto;
+            padding-bottom: 4px;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(167,139,250,0.4) transparent;
+        }
+        .lb-thumb {
+            flex-shrink: 0;
+            width: 72px; height: 52px;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: border-color 0.2s, transform 0.2s, opacity 0.2s;
+            opacity: 0.55;
+        }
+        .lb-thumb:hover    { opacity: 0.85; transform: scale(1.06); }
+        .lb-thumb-active   { border-color: #a78bfa; opacity: 1; transform: scale(1.08); }
+
+        /* Mobile tweaks */
+        @media (max-width: 600px) {
+            #lb-prev { left: 8px; }
+            #lb-next { right: 8px; }
+            #lb-prev, #lb-next { width: 42px; height: 42px; font-size: 1rem; }
+            .lb-thumb { width: 54px; height: 40px; }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -573,11 +749,113 @@
                     </p>
                 </div>
                 <div class="projects-grid">
-                    <!-- Jibli Project -->
+                    <!-- Altrad Project -->
                     <div class="project-card">
                         <div class="project-status">
                             <span class="status-badge current">Latest Project</span>
                         </div>
+                        <div class="project-images">
+                            <div class="image-gallery" data-images='["assets/altrad1.jpg", "assets/altrad2.jpg", "assets/altrad3.jpg", "assets/altrad4.jpg", "assets/altrad5.jpg"]'>
+                                <img class="gallery-image" src="assets/altrad1.jpg" alt="Altrad WeldTrack">
+                                <button class="gallery-btn prev-btn" onclick="previousImage(this)"><i class="bi bi-chevron-left"></i></button>
+                                <button class="gallery-btn next-btn" onclick="nextImage(this)"><i class="bi bi-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Altrad WeldTrack – Welder Qualification Management System</h3>
+                                <div class="project-category">
+                                    <i class="bi bi-shield-check"></i>
+                                    <span>Industrial & Compliance</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                A comprehensive welder qualification and certification management platform designed for Altrad. Streamlines compliance auditing, tracking, and validation of welder certifications. Features a real-time status dashboard, secure role-based access, QR-code verification, and automated PDF generation for certificates.
+                            </p>
+                            <div class="project-actions">
+                                <a href="http://217.182.66.101/#/login" target="_blank" class="project-link">
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                    <span>Live Platform</span>
+                                </a>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">CI/CD</span>
+                                <span class="tech-tag">Nexsus</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AutoPark Project -->
+                    <div class="project-card">
+                        <div class="project-images">
+                            <div class="image-gallery" data-images='["assets/autopark1.jpg", "assets/autopark2.jpg", "assets/autopark3.jpg", "assets/autopark4.jpg"]'>
+                                <img class="gallery-image" src="assets/autopark1.jpg" alt="AutoPark Platform">
+                                <button class="gallery-btn prev-btn" onclick="previousImage(this)"><i class="bi bi-chevron-left"></i></button>
+                                <button class="gallery-btn next-btn" onclick="nextImage(this)"><i class="bi bi-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">AutoPark – Fleet & Vehicle Maintenance Management System</h3>
+                                <div class="project-category">
+                                    <i class="bi bi-car-front-fill"></i>
+                                    <span>Fleet Management & Automation</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                An automated vehicle maintenance and fleet tracking platform designed to coordinate service schedules, manage vehicle registration documents, and send real-time alerts. Integrates a custom Telegram bot to instantly dispatch maintenance reminders, renewal notifications, and system alerts to drivers and administrators.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Telegram Bot</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cannaya Collection Project -->
+                    <div class="project-card">
+                        <div class="project-images">
+                            <div class="image-gallery" data-images='["assets/canneya1.jpg", "assets/canneya2.jpg", "assets/canneya3.jpg"]'>
+                                <img class="gallery-image" src="assets/canneya1.jpg" alt="Cannaya Collection Boutique">
+                                <button class="gallery-btn prev-btn" onclick="previousImage(this)"><i class="bi bi-chevron-left"></i></button>
+                                <button class="gallery-btn next-btn" onclick="nextImage(this)"><i class="bi bi-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Cannaya Collection – E-Commerce Boutique</h3>
+                                <div class="project-category">
+                                    <i class="bi bi-bag-heart-fill"></i>
+                                    <span>E-Commerce Boutique</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                A premium e-commerce platform dedicated to modest fashion and elegant wear. Showcases curated collections of premium hijabs, designer abayas, evening dresses, and classic modest outfits with a seamless shopping experience and responsive checkout flows.
+                            </p>
+                            <div class="project-actions">
+                                <a href="https://cannayacollection.netlify.app/" target="_blank" class="project-link">
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                    <span>Live Platform</span>
+                                </a>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Netlify</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jibli Project -->
+                    <div class="project-card">
                         <div class="project-images">
                             <div class="image-gallery" data-images='["assets/jibli-main.png", "assets/jibli-dashboard.png"]'>
                                 <img class="gallery-image" src="assets/jibli-main.png" alt="Jibli Platform">
@@ -851,8 +1129,7 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Project Card 8 -->
+                    <!--
                     <div class="project-card">
                         <div class="project-media">
                             <video controls>
@@ -879,7 +1156,7 @@
                             </div>
                         </div>
                     </div>
-                        
+                -->
                     </div>
                 </div>
                 
